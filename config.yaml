@@ -1,0 +1,21 @@
+seed: 42
+
+observational:
+  n_customers: 20000
+  pre_periods: 3
+  true_ate: 12.0
+  noise_sd: 6.0
+
+matching:
+  caliper: 0.05
+  with_replacement: true
+
+experiment:
+  n_customers: 6000
+  true_ate: 12.0
+  promo_cost_per_customer: 8.0
+  margin_rate: 0.35
+  alpha: 0.05
+  target_power: 0.8
+
+output_dir: outputs
